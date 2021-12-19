@@ -1,5 +1,5 @@
---- qtcore/src/corelib/global/qlogging.cpp	2021-12-07 05:51:35.000000000 -0800
-+++ qtcore/src/corelib/global/qlogging.cpp	2021-12-19 01:18:43.471600044 -0800
+--- a/src/corelib/global/qlogging.cpp
++++ b/src/corelib/global/qlogging.cpp
 @@ -101,16 +101,6 @@
  #include <emscripten/emscripten.h>
  #endif

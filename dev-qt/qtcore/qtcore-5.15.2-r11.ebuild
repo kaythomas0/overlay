@@ -48,7 +48,7 @@ QT5_GENTOO_PRIVATE_CONFIG=(
 PATCHES=(
 	"${FILESDIR}"/${PN}-5.14.1-cmake-macro-backward-compat.patch # bug 703306
 	"${FILESDIR}"/${PN}-5.15.1-timezone-{1,2}.patch # bug 737914
-	"${FILESDIR}"/fix-qlogging-backtrace.patch.patch # musl fix
+	"${FILESDIR}"/fix-qlogging-backtrace.patch # musl fix
 )
 
 pkg_pretend() {

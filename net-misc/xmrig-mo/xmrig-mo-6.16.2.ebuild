@@ -5,16 +5,17 @@ EAPI=7
 
 inherit cmake
 
+MO_PV="mo2"
 DESCRIPTION="MoneroOcean fork of xmrig that supports algo switching"
 HOMEPAGE="https://github.com/MoneroOcean/xmrig"
 
-S=${WORKDIR}/xmrig-${PV}-mo2
+S="${WORKDIR}/xmrig-${PV}-${MO_PV}"
 
 if [[ ${PV} == *9999 ]] ; then
 	EGIT_REPO_URI="https://github.com/MoneroOcean/xmrig.git"
 	inherit git-r3
 else
-	SRC_URI="https://github.com/MoneroOcean/xmrig/archive/v${PV}-mo2.tar.gz -> ${P}.tar.gz"
+	SRC_URI="https://github.com/MoneroOcean/xmrig/archive/v${PV}-${MO_PV}.tar.gz -> ${P}-${MO_PV}.tar.gz"
 	KEYWORDS="~amd64 ~arm64"
 fi
 
@@ -32,6 +33,10 @@ RDEPEND="
 	${DEPEND}
 	!arm64? ( sys-apps/msr-tools )
 "
+
+PATCHES=(
+	"${FILESDIR}"/${PN}-6.12.2-nonotls.patch
+)
 
 src_prepare() {
 	if ! use donate ; then

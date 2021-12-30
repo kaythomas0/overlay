@@ -9,9 +9,9 @@ Subject: [PATCH] Don't suffix binary with -notls
 
 diff --git a/cmake/OpenSSL.cmake b/cmake/OpenSSL.cmake
 index 89805301..c01c940a 100644
---- a/cmake/OpenSSL.cmake
-+++ b/cmake/OpenSSL.cmake
-@@ -54,6 +54,4 @@ else()
+--- OpenSSL.cmake	2021-12-29 23:50:00.417868302 -0800
++++ OpenSSL-new.cmake	2021-12-29 23:50:20.924971677 -0800
+@@ -59,6 +59,4 @@ else()
              src/base/net/http/HttpServer.h
              )
      endif()

@@ -1,7 +1,7 @@
 # overlay
 Personal gentoo ebuild repository. Some fixes for musl.
 
-# Maintained
+## Maintained
 * media-sound/bitwig-studio: Modern music production and performance for Windows, macOS, and Linux.
 
 ## No Longer Maintained

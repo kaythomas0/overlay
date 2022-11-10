@@ -1,6 +1,10 @@
 # overlay
 Personal gentoo ebuild repository. Some fixes for musl.
 
+# Maintained
+* media-sound/bitwig-studio: Modern music production and performance for Windows, macOS, and Linux.
+
+## No Longer Maintained
 * net-p2p/monero: musl fix
 * net-misc/xmrig-mo: ([moved to GURU](https://gitweb.gentoo.org/repo/proj/guru.git/tree/net-misc/xmrig-mo)) Monero Ocean's fork of xmrig (supports algo switching), OpenCL support
 * dev-libs/libixion: musl fix

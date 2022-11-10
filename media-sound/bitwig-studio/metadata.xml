@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <name>Kay Thomas</name>
+    <email>kaythomas@pm.me</email>
+  </maintainer>
+  <longdescription>
+    Modern music production and performance for Windows, macOS, and Linux.
+  </longdescription>
+</pkgmetadata>

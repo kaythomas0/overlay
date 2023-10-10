@@ -57,6 +57,8 @@ QA_PREBUILT="
 S=${WORKDIR}
 
 src_prepare() {
+	eapply_user
+
 	sed -i \
 	-e 's/Icon=.*/Icon=bitwig-studio/' \
 	-e 's/Categories=.*/Categories=AudioVideo;Audio;AudioVideoEditing/' \
